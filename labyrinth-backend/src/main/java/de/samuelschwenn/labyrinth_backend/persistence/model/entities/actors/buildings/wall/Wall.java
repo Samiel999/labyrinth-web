@@ -8,5 +8,5 @@ import lombok.experimental.SuperBuilder;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @SuperBuilder
-public abstract class Wall<T extends Wall<T>> extends Building<T> {
+public abstract class Wall extends Building {
 }

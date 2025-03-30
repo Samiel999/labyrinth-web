@@ -8,6 +8,6 @@ import lombok.experimental.SuperBuilder;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @SuperBuilder
-public abstract class Building<T extends Building<T>> extends Actor<T> {
+public abstract class Building extends Actor {
     protected double cost;
 }

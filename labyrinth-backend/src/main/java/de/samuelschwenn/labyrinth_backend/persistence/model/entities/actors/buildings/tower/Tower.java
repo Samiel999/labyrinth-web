@@ -8,7 +8,7 @@ import lombok.experimental.SuperBuilder;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @SuperBuilder
-public abstract class Tower<T extends Tower<T>> extends Building<T> {
+public abstract class Tower extends Building {
     protected int reach;
     protected int attackSpeed;
     protected double timeTilShoot;

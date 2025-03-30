@@ -12,13 +12,17 @@ import java.util.List;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @SuperBuilder
-public abstract class Monster<T extends Monster<T>> extends Actor<T> {
+public abstract class Monster extends Actor {
     protected double movementSpeed;
     protected int attackSpeed;
     protected double bounty;
     protected double pathWeight;
     protected List<GridCoords> path;
-    protected Direction direction;
+    protected Direction facing;
     protected double progressToNextCoordinate;
 
+    @Override
+    public Direction getFacing() {
+        return facing;
+    }
 }
