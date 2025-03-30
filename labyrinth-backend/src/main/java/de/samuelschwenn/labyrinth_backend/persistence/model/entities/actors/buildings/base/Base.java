@@ -9,7 +9,7 @@ import lombok.experimental.SuperBuilder;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @SuperBuilder
-public abstract class Base<T extends Base<T>> extends Building<T> {
+public abstract class Base extends Building {
     @Override
     public void die(GameState gameState) {
         super.die(gameState);

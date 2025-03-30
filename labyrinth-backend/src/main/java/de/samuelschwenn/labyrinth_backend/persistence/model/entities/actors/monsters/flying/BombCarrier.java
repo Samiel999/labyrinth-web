@@ -1,7 +1,7 @@
-package de.samuelschwenn.labyrinth_backend.persistence.model.entities.actors.buildings.tower;
+package de.samuelschwenn.labyrinth_backend.persistence.model.entities.actors.monsters.flying;
 
 import de.samuelschwenn.labyrinth_backend.persistence.util.types.DrawableType;
-import de.samuelschwenn.labyrinth_backend.persistence.util.types.TowerType;
+import de.samuelschwenn.labyrinth_backend.persistence.util.types.MonsterType;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.SuperBuilder;
@@ -9,9 +9,9 @@ import lombok.experimental.SuperBuilder;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @SuperBuilder
-public class Sniper extends Tower {
+public class BombCarrier extends FlyingMonster{
     @Override
     public DrawableType getType() {
-        return TowerType.TOWER_SNIPER;
+        return MonsterType.MONSTER_BOMB_CARRIER;
     }
 }

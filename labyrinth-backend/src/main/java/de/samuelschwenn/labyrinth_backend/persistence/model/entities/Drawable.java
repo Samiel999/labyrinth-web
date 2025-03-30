@@ -1,7 +1,7 @@
 package de.samuelschwenn.labyrinth_backend.persistence.model.entities;
 
 import de.samuelschwenn.labyrinth_backend.persistence.util.Direction;
-import de.samuelschwenn.labyrinth_backend.persistence.util.DrawableType;
+import de.samuelschwenn.labyrinth_backend.persistence.util.types.DrawableType;
 import de.samuelschwenn.labyrinth_backend.persistence.util.GridCoords;
 
 public interface Drawable {

@@ -8,14 +8,11 @@ import lombok.experimental.SuperBuilder;
 
 @Data
 @SuperBuilder
-public abstract class Actor<T extends Actor<T>> implements Drawable {
-
+public abstract class Actor implements Drawable {
     protected int strength;
     protected int maxHealth;
     protected int actualHealth;
     protected GridCoords position;
-
-    public abstract T instantiate(GridCoords position);
 
     @Override
     public GridCoords getGridCoords() {

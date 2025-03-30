@@ -1,7 +1,7 @@
 package de.samuelschwenn.labyrinth_backend.persistence.dtos;
 
 import de.samuelschwenn.labyrinth_backend.persistence.util.Direction;
-import de.samuelschwenn.labyrinth_backend.persistence.util.DrawableType;
+import de.samuelschwenn.labyrinth_backend.persistence.util.types.DrawableType;
 import de.samuelschwenn.labyrinth_backend.persistence.util.GridCoords;
 import lombok.Builder;
 import lombok.Value;

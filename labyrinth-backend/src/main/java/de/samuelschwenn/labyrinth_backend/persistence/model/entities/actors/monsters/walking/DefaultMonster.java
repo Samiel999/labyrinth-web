@@ -1,17 +1,18 @@
-package de.samuelschwenn.labyrinth_backend.persistence.model.entities.actors.buildings.tower;
+package de.samuelschwenn.labyrinth_backend.persistence.model.entities.actors.monsters.walking;
 
 import de.samuelschwenn.labyrinth_backend.persistence.util.types.DrawableType;
-import de.samuelschwenn.labyrinth_backend.persistence.util.types.TowerType;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.SuperBuilder;
 
+import static de.samuelschwenn.labyrinth_backend.persistence.util.types.MonsterType.MONSTER_DEFAULT;
+
 @Data
 @EqualsAndHashCode(callSuper = true)
 @SuperBuilder
-public class Sniper extends Tower {
+public class DefaultMonster extends WalkingMonster {
     @Override
     public DrawableType getType() {
-        return TowerType.TOWER_SNIPER;
+        return MONSTER_DEFAULT;
     }
 }
